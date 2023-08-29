@@ -1,3 +1,10 @@
+# My NeoVim Config.
+I still have a few things to do:
+## TO DO
+- [ ] Use catpuccin theme instead of rose
+- [ ] Bump the code from Lua to Nix after learning Nix
+
+
 Based on the provided `lsp.lua` configuration, here are the settings I have created for accepting auto-completion recommendations and other button combination settings:
 
 
