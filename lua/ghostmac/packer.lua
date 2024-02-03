@@ -16,13 +16,16 @@ return require('packer').startup(function(use)
     requires = { 'nvim-lua/plenary.nvim' }
   }
 
-  use ({
-    'rose-pine/neovim',
-    as = 'rose-pine',
-    config = function()
-	    vim.cmd('colorscheme rose-pine')
-	end
-  })
+  -- Gruvbox theme
+  use 'morhetz/gruvbox'
+
+  -- use ({
+  --   'rose-pine/neovim',
+  --   as = 'rose-pine',
+  --   config = function()
+	--     vim.cmd('colorscheme rose-pine')
+	-- end
+  -- })
 
   use( 'nvim-treesitter/nvim-treesitter', { run = ':TSUpdate'})
   use( 'nvim-treesitter/playground')
@@ -33,8 +36,7 @@ return require('packer').startup(function(use)
   -- wakatime api 
   use('wakatime/vim-wakatime')
 
-  -- Nerdcommenter plugin 
-  -- set('preservim/nerdcommenter')
+  use('preservim/nerdcommenter')
 
   use {
   'VonHeikemen/lsp-zero.nvim',
